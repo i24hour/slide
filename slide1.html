@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide 1 - Rural User Expectations & Target Segment</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+background: white;
+overflow-x: hidden;
+}
+
+.container {
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+.slide {
+background: white;
+border-radius: 0;
+margin: 0;
+width: 100%;
+min-height: 100vh;
+overflow: hidden;
+box-shadow: none;
+border-bottom: 3px solid #e2e8f0;
+transform: translateY(20px);
+opacity: 0;
+animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+to {
+transform: translateY(0);
+opacity: 1;
+}
+}
+
+.slide-header {
+background: linear-gradient(135deg, #e53e3e 0%, #9f1239 100%);
+color: white;
+padding: 25px 40px;
+position: relative;
+overflow: hidden;
+}
+
+.slide-header::before {
+content: '';
+position: absolute;
+top: -50%;
+right: -20px;
+width: 100px;
+height: 200%;
+background: rgba(255, 255, 255, 0.1);
+transform: rotate(15deg);
+}
+
+.slide-number {
+font-size: 14px;
+opacity: 0.9;
+margin-bottom: 10px;
+font-weight: 600;
+}
+
+.slide-title {
+font-size: 28px;
+font-weight: 700;
+line-height: 1.2;
+margin-bottom: 8px;
+}
+
+.slide-subtitle {
+font-size: 16px;
+opacity: 0.9;
+font-weight: 400;
+}
+
+.slide-content {
+padding: 40px;
+}
+
+.insight-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+margin-top: 30px;
+}
+
+.insight-card {
+background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+padding: 25px;
+border-radius: 15px;
+border-left: 5px solid #e53e3e;
+transition: transform 0.3s ease;
+}
+
+.insight-card:hover {
+transform: translateY(-5px);
+}
+
+.insight-title {
+font-size: 18px;
+font-weight: 700;
+color: #1a365d;
+margin-bottom: 12px;
+display: flex;
+align-items: center;
+}
+
+.insight-icon {
+width: 24px;
+height: 24px;
+margin-right: 10px;
+background: #e53e3e;
+border-radius: 6px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-weight: bold;
+}
+
+.insight-text {
+font-size: 14px;
+line-height: 1.6;
+color: #4a5568;
+}
+
+.highlight-box {
+background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+border: 2px solid #e53e3e;
+border-radius: 15px;
+padding: 25px;
+margin: 25px 0;
+position: relative;
+}
+
+.highlight-box::before {
+content: '★';
+position: absolute;
+top: -10px;
+left: 20px;
+background: #e53e3e;
+color: white;
+padding: 5px 12px;
+border-radius: 20px;
+font-size: 14px;
+}
+
+.logo {
+position: fixed;
+top: 20px;
+right: 20px;
+background: white;
+padding: 10px 20px;
+border-radius: 25px;
+font-weight: 800;
+color: #e53e3e;
+font-size: 18px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+z-index: 1000;
+border: 2px solid #e53e3e;
+}
+
+.target-segment {
+display: grid;
+grid-template-columns: 1fr 2fr;
+gap: 30px;
+align-items: center;
+}
+
+.segment-visual {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+padding: 30px;
+border-radius: 15px;
+text-align: center;
+}
+
+.segment-number {
+font-size: 48px;
+font-weight: 800;
+margin-bottom: 10px;
+}
+
+.segment-desc {
+font-size: 16px;
+opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+.insight-grid, .target-segment {
+grid-template-columns: 1fr;
+gap: 20px;
+}
+
+.slide-title {
+font-size: 24px;
+}
+
+.slide-content {
+padding: 25px;
+}
+}
+</style>
+</head>
+<body>
+<div class="logo">meesho</div>
+
+<div class="container">
+<!-- Slide 1: Target Rural User & Market Segment -->
+<div class="slide">
+<div class="slide-header">
+<div class="slide-number">SLIDE 1</div>
+<div class="slide-title">Rural User Expectations & Target Segment</div>
+<div class="slide-subtitle">Understanding the first-time rural marketplace user</div>
+</div>
+<div class="slide-content">
+<div class="target-segment">
+    <div class="segment-visual">
+        <div class="segment-number">35M</div>
+        <div class="segment-desc">Rural households with smartphones in villages <10k population</div>
+    </div>
+    <div>
+        <h3 style="color: #1a365d; font-size: 22px; margin-bottom: 20px;">Primary Target: "Aspirational Rural Families"</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin: 10px 0; padding-left: 25px; position: relative;">
+                <span style="position: absolute; left: 0; color: #e53e3e;">👨‍👩‍👧‍👦</span>
+                <strong>Demographics:</strong> Households with ₹15k-40k monthly income, 1+ smartphone user
+            </li>
+            <li style="margin: 10px 0; padding-left: 25px; position: relative;">
+                <span style="position: absolute; left: 0; color: #e53e3e;">🛒</span>
+                <strong>Shopping Behavior:</strong> Value-conscious, brand-aware but price-sensitive
+            </li>
+            <li style="margin: 10px 0; padding-left: 25px; position: relative;">
+                <span style="position: absolute; left: 0; color: #e53e3e;">📱</span>
+                <strong>Digital Comfort:</strong> Basic smartphone usage, social media active
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="highlight-box">
+    <h4 style="color: #e53e3e; font-size: 18px; margin-bottom: 15px;">What Rural Users Expect from a Marketplace:</h4>
+    <div class="insight-grid">
+        <div class="insight-card">
+            <div class="insight-title">
+                <div class="insight-icon">₹</div>
+                Trust & Transparency
+            </div>
+            <div class="insight-text">Clear pricing, no hidden charges, authentic reviews, money-back guarantee prominently displayed</div>
+        </div>
+        <div class="insight-card">
+            <div class="insight-title">
+                <div class="insight-icon">🏠</div>
+                Local Relevance
+            </div>
+            <div class="insight-text">Regional language support, products suited to rural lifestyle, local festival collections</div>
+        </div>
+        <div class="insight-card">
+            <div class="insight-title">
+                <div class="insight-icon">📞</div>
+                Human Touch
+            </div>
+            <div class="insight-text">Voice ordering option, video product demos, customer support in local language</div>
+        </div>
+        <div class="insight-card">
+            <div class="insight-title">
+                <div class="insight-icon">🚚</div>
+                Reliable Delivery
+            </div>
+            <div class="insight-text">Flexible delivery options, SMS/call updates, easy returns with doorstep pickup</div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
